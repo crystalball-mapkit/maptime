@@ -1,13 +1,13 @@
 {
   "app": {
-    "title": "crystalball",
+    "title": "maptime",
     "color": {
       "primary": "#00000e",
       "secondary": "#00000e"
     },
     "legend": { "isVisible": false },
     "sideBar": {
-      "isVisible": true,
+      "isVisible": false,
       "backgroundColor": "#fefefe",
       "textColor": "black"
     }
