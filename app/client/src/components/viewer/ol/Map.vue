@@ -24,14 +24,14 @@
       />
     </div>
 
-    <!-- <div
+    <div
       v-show="spotlightMessage === true"
       :style="`background-color: ${color.primary}`"
       class="elevation-4 regular spotlight-message"
       ref="spotlightControls"
     >
       press ↑ or ↓ to change spotlight size
-    </div> -->
+    </div>
 
     <!-- Popup overlay  -->
     <overlay-popup
@@ -232,7 +232,7 @@ export default {
       queryLayersGeoserverNames: null,
       activeInteractions: [],
       getInfoResult: [],
-      radius: 300,
+      radius: 240,
       mousePosition: undefined,
       spotlightMessage: false,
       lightBoxImages: [],
@@ -800,7 +800,7 @@ export default {
       // for using the spotlights should be shown based on zoom level.
       this.map.on('moveend', () => {
         const resolutionLevel = this.map.getView().getResolution();
-        if (resolutionLevel <= 20) {
+        if (resolutionLevel <= 4) {
           this.spotlightMessage = true;
         } else {
           this.spotlightMessage = false;
