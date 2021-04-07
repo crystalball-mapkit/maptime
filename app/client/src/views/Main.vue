@@ -26,7 +26,7 @@
         :style="`background-color:${color.primary};text-color:white;`"
         class="logo headline font-weight-bold gray--text mr-3 dark"
         >{{ $appConfig.app.title }}</v-toolbar-title
-      >
+      > <!--
       <v-tooltip right>
         <template v-slot:activator="{ on }">
           <v-btn
@@ -40,7 +40,7 @@
             ><v-icon medium>fas fa-question</v-icon></v-btn
           > </template
         ><span>Open Website</span>
-      </v-tooltip>
+      </v-tooltip>  -->
 
       <v-spacer></v-spacer>
       <div v-for="(navbarGroup, index) in navbarGroups" :key="index">
@@ -66,7 +66,7 @@
           {{ navbarGroup.title }}
         </v-btn>
       </div>
-      <v-spacer></v-spacer><v-spacer></v-spacer>
+      <v-spacer></v-spacer><v-spacer></v-spacer><v-spacer></v-spacer>
 
       <!--      <span class="title pr-5">before it's too late</span>  -->
       <v-btn icon @click.stop="sidebarState = !sidebarState"
