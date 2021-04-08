@@ -173,7 +173,7 @@ export default {
           name: 'post_edit_layer',
           isInteractive: false,
           queryable: false,
-          zIndex: 10000,
+          zIndex: -100,
           source: postEditLayerSource,
           style: postEditLayerStyle
         }
