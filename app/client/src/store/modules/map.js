@@ -37,7 +37,7 @@ const state = {
       'gid',
       'layerName'
     ],
-    diveVisibleProps: ['title', 'entitiy'],
+    diveVisibleProps: ['title', 'entity'],
     showInSidePanel: false
   },
   layers: {}, // Only for operational layers
@@ -68,7 +68,7 @@ const state = {
     visible: true,
     zIndex: 50,
     minResolution: 0.25,
-    maxResolution: 16000,
+    maxResolution: 32000,
     label: null,
     hoverable: true,
     canEdit: false,
